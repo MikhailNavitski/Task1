@@ -17,7 +17,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		Criteria<Oven> criteriaOven = new Criteria<>();
+		Criteria<Oven> criteriaOven = new Criteria<Oven>();
 		criteriaOven.setApplianceType("Oven");
 		criteriaOven.add(Oven.CAPACITY, 3);
 
@@ -28,7 +28,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		criteriaOven = new Criteria<>();
+		criteriaOven = new Criteria<Oven>();
 		criteriaOven.setApplianceType("Oven");
 		criteriaOven.add(Oven.HEIGHT, 200);
 		criteriaOven.add(Oven.DEPTH, 300);
@@ -39,7 +39,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 		
-		Criteria<TabletPC> criteriaTabletPC = new Criteria<>();
+		Criteria<TabletPC> criteriaTabletPC = new Criteria<TabletPC>();
 		criteriaTabletPC.setApplianceType("TabletPC");
 		criteriaTabletPC.add(TabletPC.COLOR, "BLUE");
 		criteriaTabletPC.add(TabletPC.DISPLAY_INCHES, 14);
@@ -49,7 +49,7 @@ public class Main {
 
 		PrintApplianceInfo.print(appliance);
 		///////////////////////////////////////////////////////////////////
-		Criteria<Speakers> criteriaSpeakers = new Criteria<>();
+		Criteria<Speakers> criteriaSpeakers = new Criteria<Speakers>();
 		criteriaSpeakers.setApplianceType("Speakers");
 		criteriaSpeakers.add(Speakers.NUMBER_OF_SPEAKERS, 2);
 		criteriaSpeakers.add(Speakers.POWER_CONSUMPTION,15);

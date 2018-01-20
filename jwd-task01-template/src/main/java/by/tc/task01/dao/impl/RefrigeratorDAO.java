@@ -39,7 +39,7 @@ public class RefrigeratorDAO implements Command {
     @Override
     public <E> Appliance readingFile(Criteria<E> criteria) throws IOException {
         Appliance appliance;
-        File file = new File("jwd-task01-template//src//main//resources//appliances_db.txt");
+        File file = new File("jwd-task01-template//src//main//resources//appliances_db");
         int count = 0;
         Scanner scanner = new Scanner(file);
         Map<E, Object> map = criteria.getCriteria();
