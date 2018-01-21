@@ -4,7 +4,7 @@ public class Speakers extends Appliance {
     private int powerConsumption;
     private int numberOfSpeakers;
     private String frequencyRange;
-    private int cordLENGTH;
+    private int cordLength;
 
     public int getPowerConsumption() {
         return powerConsumption;
@@ -19,7 +19,7 @@ public class Speakers extends Appliance {
     }
 
     public int getCordLENGTH() {
-        return cordLENGTH;
+        return cordLength;
     }
 
     public void setPowerConsumption(int powerConsumption) {
@@ -35,7 +35,7 @@ public class Speakers extends Appliance {
     }
 
     public void setCordLENGTH(int cordLENGTH) {
-        this.cordLENGTH = cordLENGTH;
+        this.cordLength = cordLENGTH;
     }
 
     @Override
@@ -44,7 +44,7 @@ public class Speakers extends Appliance {
                 "powerConsumption=" + powerConsumption +
                 ", numberOfSpeakers=" + numberOfSpeakers +
                 ", frequencyRange='" + frequencyRange + '\'' +
-                ", cordLENGTH=" + cordLENGTH
+                ", cordLength=" + cordLength
                 ;
     }
 
@@ -57,7 +57,7 @@ public class Speakers extends Appliance {
 
         if (powerConsumption != speakers.powerConsumption) return false;
         if (numberOfSpeakers != speakers.numberOfSpeakers) return false;
-        if (cordLENGTH != speakers.cordLENGTH) return false;
+        if (cordLength != speakers.cordLength) return false;
         return frequencyRange != null ? frequencyRange.equals(speakers.frequencyRange) : speakers.frequencyRange == null;
     }
 
@@ -66,7 +66,7 @@ public class Speakers extends Appliance {
         int result = powerConsumption;
         result = 31 * result + numberOfSpeakers;
         result = 31 * result + (frequencyRange != null ? frequencyRange.hashCode() : 0);
-        result = 31 * result + cordLENGTH;
+        result = 31 * result + cordLength;
         return result;
     }
 }

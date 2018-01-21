@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8dd51d9-5222-4ddf-8cad-25c893fc257f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/ValidatorL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/ValidatorOR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/ValidatorTSV.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/ValidatorL.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorLImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/ValidatorOR.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorORImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/ValidatorTSV.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorTSVImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/ValidationDirector.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/ValidationDirector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Speakers.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Speakers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/ApplianceService.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/ApplianceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,72 +28,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ValidatorLImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorLImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-526">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="-475">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#681#687#0" expanded="true" />
-                <element signature="e#1416#1426#0" expanded="true" />
-                <element signature="e#1913#1923#0" expanded="true" />
+                <element signature="e#707#713#0" expanded="true" />
+                <element signature="e#1442#1452#0" expanded="true" />
+                <element signature="e#1939#1949#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidatorORImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorORImpl.java">
+      <file leaf-file-name="FileReaderException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/exception/FileReaderException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidatorTSVImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorTSVImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrintApplianceInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/PrintApplianceInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Refrigerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Refrigerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+            <state relative-caret-position="272">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,18 +56,18 @@
       <file leaf-file-name="Speakers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Speakers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="71" column="1" lean-forward="false" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+            <state relative-caret-position="510">
+              <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidationDirector.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/ValidationDirector.java">
+      <file leaf-file-name="ApplianceDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/ApplianceDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,22 +75,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VacuumCleaner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/VacuumCleaner.java">
+      <file leaf-file-name="ApplianceDAOImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="95" column="1" lean-forward="false" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="374">
+              <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TabletPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/TabletPC.java">
+      <file leaf-file-name="OvenDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/OvenDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="83" column="1" lean-forward="false" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="663">
+              <caret line="39" column="67" lean-forward="true" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplianceServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,7 +135,6 @@
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Appliance.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Oven.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Refrigerator.java" />
-        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Speakers.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/TabletPC.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/VacuumCleaner.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/entity/Speakers.java" />
@@ -180,7 +147,6 @@
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/commandPrint/CommandPrint.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/commandPrint/PrintDirector.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/CommandValidation.java" />
-        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/Validator.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/criteria/SearchCriteria.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Laptop.java" />
@@ -190,24 +156,28 @@
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/SpeakersDAO.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/TabletPCDAO.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/VacuumCleanerDAO.java" />
-        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/LaptopDAO.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/OvenDAO.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/exception/MainException.java" />
-        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/VacuumCleanerDAO.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/VacuumCleanerDAOImpl.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/ApplianceDirector.java" />
-        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/ApplianceDAO.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/DAOFactory.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/Command.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/PrintApplianceInfo.java" />
-        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/ApplianceService.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/ServiceFactory.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/ValidatorL.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/ValidatorTSV.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorTSV.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorTSVImpl.java" />
+        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/Validator.java" />
+        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/exception/FileReaderException.java" />
+        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/ApplianceService.java" />
+        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/ApplianceDAO.java" />
+        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/OvenDAOImpl.java" />
+        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java" />
+        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Speakers.java" />
       </list>
     </option>
   </component>
@@ -216,6 +186,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -291,6 +267,38 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task01" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task1" type="462c0819:PsiDirectoryNode" />
+              <item name="jwd-task01-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task01" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task1" type="462c0819:PsiDirectoryNode" />
+              <item name="jwd-task01-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task01" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task1" type="462c0819:PsiDirectoryNode" />
+              <item name="jwd-task01-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task01" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,6 +310,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task01" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task1" type="462c0819:PsiDirectoryNode" />
+              <item name="jwd-task01-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task01" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task1" type="b2602c69:ProjectViewProjectNode" />
@@ -323,29 +342,6 @@
               <item name="task01" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="jwd-task01-template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task01" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="jwd-task01-template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task01" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -510,32 +506,42 @@
       <workItem from="1516447675956" duration="9018000" />
       <workItem from="1516459336851" duration="447000" />
       <workItem from="1516480414437" duration="3089000" />
-      <workItem from="1516535481848" duration="3513000" />
+      <workItem from="1516535481848" duration="8983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34016000" />
+    <option name="totallyTimeSpent" value="39486000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2664437" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30100334" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33102345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30100334" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24413647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -547,7 +553,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,26 +568,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#681#687#0" expanded="true" />
-            <element signature="e#1416#1426#0" expanded="true" />
-            <element signature="e#1913#1923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/ApplianceDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -653,26 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/OvenDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/RefrigeratorDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/SpeakersDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -703,104 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/LaptopDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/ApplianceDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/DAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/ApplianceDirector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/ApplianceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="68" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/CommandValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -837,14 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Speakers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="71" column="1" lean-forward="false" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/VacuumCleaner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -861,30 +724,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-526">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="256">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#681#687#0" expanded="true" />
-            <element signature="e#1416#1426#0" expanded="true" />
-            <element signature="e#1913#1923#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/PrintApplianceInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorORImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -894,11 +746,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/impl/ValidatorTSVImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="85">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/CommandValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="66" lean-forward="true" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/ValidationDirector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/ServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/PrintApplianceInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -912,10 +798,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/validation/command/ValidationDirector.java">
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/ApplianceDirector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/LaptopDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/RefrigeratorDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/ApplianceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/OvenDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="67" lean-forward="true" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#707#713#0" expanded="true" />
+            <element signature="e#1442#1452#0" expanded="true" />
+            <element signature="e#1939#1949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/exception/FileReaderException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/entity/Speakers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/ApplianceDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
