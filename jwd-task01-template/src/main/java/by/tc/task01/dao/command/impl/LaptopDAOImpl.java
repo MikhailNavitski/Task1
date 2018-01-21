@@ -1,4 +1,4 @@
-package by.tc.task01.dao.impl;
+package by.tc.task01.dao.command.impl;
 
 import by.tc.task01.dao.command.Command;
 import by.tc.task01.entity.Appliance;
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Scanner;
 
-public class LaptopDAO implements Command {
+public class LaptopDAOImpl implements Command {
 
     private Appliance makeLaptop(String fileLine) {
         String[] stringLine = new String[8];

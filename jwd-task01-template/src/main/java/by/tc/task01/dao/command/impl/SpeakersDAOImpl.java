@@ -1,4 +1,4 @@
-package by.tc.task01.dao.impl;
+package by.tc.task01.dao.command.impl;
 
 import by.tc.task01.dao.command.Command;
 import by.tc.task01.entity.Appliance;
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Scanner;
 
-public class SpeakersDAO implements Command {
+public class SpeakersDAOImpl implements Command {
 
 
     private Appliance makeSpeakers(String fileLine) {

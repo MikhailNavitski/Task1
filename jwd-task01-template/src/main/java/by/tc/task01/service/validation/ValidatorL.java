@@ -5,7 +5,7 @@ import by.tc.task01.service.validation.command.CommandValidation;
 import java.util.regex.Pattern;
 
 public class ValidatorL implements CommandValidation {
-    
+
     private final static String REGEX_NUM = "\\d+?(.\\d+)?";
     private final static String REGEX_STR = "[a-zA-Z]+";
 

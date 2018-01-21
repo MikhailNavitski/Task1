@@ -11,22 +11,16 @@ import java.io.IOException;
 
 public class ApplianceServiceImpl implements ApplianceService {
 
-	@Override
-	public <E> Appliance find(Criteria<E> criteria) {
-		if (!Validator.criteriaValidator(criteria)) {
-			System.out.println("\nВалидация не пройдена\n");
-			return null;
-		}
-		DAOFactory factory = DAOFactory.getInstance();
-		ApplianceDAO applianceDAO = factory.getApplianceDAO();
-		try {
-			Appliance appliance = applianceDAO.find(criteria);
-			return appliance;
-		}
-		catch (IOException e){
-			e.printStackTrace();
-		}
-		return null;
-	}
+    @Override
+    public <E> Appliance find(Criteria<E> criteria) throws IOException {
+        if (!Validator.criteriaValidator(criteria)) {
+            System.out.println("\nВалидация не пройдена\n");
+            return null;
+        }
+        DAOFactory factory = DAOFactory.getInstance();
+        ApplianceDAO applianceDAO = factory.getApplianceDAO();
+        Appliance appliance = applianceDAO.find(criteria);
+        return appliance;
+    }
 }
 
