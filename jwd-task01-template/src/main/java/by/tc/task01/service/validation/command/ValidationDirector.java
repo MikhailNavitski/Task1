@@ -1,6 +1,8 @@
 package by.tc.task01.service.validation.command;
 
-import by.tc.task01.service.validation.*;
+import by.tc.task01.service.validation.command.impl.ValidatorLImpl;
+import by.tc.task01.service.validation.command.impl.ValidatorORImpl;
+import by.tc.task01.service.validation.command.impl.ValidatorTSVImpl;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,12 +11,12 @@ public class ValidationDirector {
     private Map<String, CommandValidation> map = new HashMap<>();
 
    public ValidationDirector() {
-        map.put("Laptop", new ValidatorL());
-        map.put("Oven", new ValidatorOR());
-        map.put("Refrigerator", new ValidatorOR());
-        map.put("Speakers", new ValidatorTSV());
-        map.put("TabletPC", new ValidatorTSV());
-        map.put("VacuumCleaner", new ValidatorTSV());
+        map.put("Laptop", new ValidatorLImpl());
+        map.put("Oven", new ValidatorORImpl());
+        map.put("Refrigerator", new ValidatorORImpl());
+        map.put("Speakers", new ValidatorTSVImpl());
+        map.put("TabletPC", new ValidatorTSVImpl());
+        map.put("VacuumCleaner", new ValidatorTSVImpl());
     }
 
     public CommandValidation getCommand(String type) {

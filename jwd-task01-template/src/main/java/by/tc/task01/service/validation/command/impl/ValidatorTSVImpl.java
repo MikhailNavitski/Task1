@@ -1,10 +1,10 @@
-package by.tc.task01.service.validation;
+package by.tc.task01.service.validation.command.impl;
 
 import by.tc.task01.service.validation.command.CommandValidation;
 
 import java.util.regex.Pattern;
 
-public class ValidatorTSV implements CommandValidation {
+public class ValidatorTSVImpl implements CommandValidation {
 
     private final static String REGEX_NUM = "\\d+?(.\\d+)?";
     private final static String REGEX_STR = "[a-zA-Z]+";
