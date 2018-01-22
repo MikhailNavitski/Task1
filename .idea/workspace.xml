@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8dd51d9-5222-4ddf-8cad-25c893fc257f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/Command.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/LaptopDAOImpl.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/LaptopDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/OvenDAOImpl.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/OvenDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/RefrigeratorDAOImpl.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/RefrigeratorDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/SpeakersDAOImpl.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/SpeakersDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/TabletPCDAOImpl.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/TabletPCDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/VacuumCleanerDAOImpl.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/VacuumCleanerDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" afterPath="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,8 +61,8 @@
       <file leaf-file-name="Command.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -218,8 +210,8 @@
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/VacuumCleanerDAOImpl.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/impl/RefrigeratorDAOImpl.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" />
-        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/Command.java" />
         <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java" />
+        <option value="$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/Command.java" />
       </list>
     </option>
   </component>
@@ -527,12 +519,12 @@
       <workItem from="1516459336851" duration="447000" />
       <workItem from="1516480414437" duration="3089000" />
       <workItem from="1516535481848" duration="14828000" />
-      <workItem from="1516617991015" duration="2328000" />
+      <workItem from="1516617991015" duration="2511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47659000" />
+    <option name="totallyTimeSpent" value="47842000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,7 +537,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -555,8 +546,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30100334" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33102345" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29877368" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29877368" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24414715" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -887,16 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
@@ -925,10 +906,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jwd-task01-template/src/main/java/by/tc/task01/dao/command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
