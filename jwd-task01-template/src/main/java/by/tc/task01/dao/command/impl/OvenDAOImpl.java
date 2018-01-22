@@ -3,16 +3,11 @@ package by.tc.task01.dao.command.impl;
 import by.tc.task01.dao.command.Command;
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.Oven;
-import by.tc.task01.entity.criteria.Criteria;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Map;
-import java.util.Scanner;
 
 public class OvenDAOImpl implements Command {
 
-    private Appliance makeOven(String fileLine) {
+    public Appliance makeAppliance(String fileLine) {
         String[] stringLine = new String[8];
         int[] intLine = new int[8];
         double[] doubleLine = new double[4];
@@ -36,29 +31,5 @@ public class OvenDAOImpl implements Command {
     }
 
 
-    @Override
-    public <E> Appliance readingFile(Criteria<E> criteria) throws IOException {
-        Appliance appliance;
-        File file = new File("jwd-task01-template//src//main//resources//appliances_db.txt");
-        int count = 0;
-        Scanner scanner = new Scanner(file);
-        Map<E, Object> map = criteria.getCriteria();
-        while (scanner.hasNextLine()) {
-            String fileLine = scanner.nextLine();
-            fileLine = fileLine.replace(";", ",");
-            String parameter;
-            for (Map.Entry entry : map.entrySet()) {
-                parameter = " " + entry.getKey() + "=" + entry.getValue() + ",";
-                if (fileLine.contains(parameter)) {
-                    count++;
-                }
-            }
-            if (fileLine.contains("Oven") && map.size() == count) {
-                appliance = makeOven(fileLine);
-                return appliance;
-            }
-            count = 0;
-        }
-        return null;
-    }
+
 }

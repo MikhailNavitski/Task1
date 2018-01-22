@@ -3,17 +3,11 @@ package by.tc.task01.dao.command.impl;
 import by.tc.task01.dao.command.Command;
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.VacuumCleaner;
-import by.tc.task01.entity.criteria.Criteria;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Map;
-import java.util.Scanner;
 
 public class VacuumCleanerDAOImpl implements Command {
 
 
-    private Appliance makeVacuumCleaner(String fileLine) {
+   public Appliance makeAppliance(String fileLine) {
         int[] intLine = new int[10];
         String[] strings = fileLine.split(" ");
         for (int i = 2; i < strings.length; i++) {
@@ -32,29 +26,5 @@ public class VacuumCleanerDAOImpl implements Command {
         return vacuumCleaner;
     }
 
-    @Override
-    public <E> Appliance readingFile(Criteria<E> criteria) throws IOException {
-        Appliance appliance;
-        File file = new File("jwd-task01-template//src//main//resources//appliances_db.txt");
-        int count = 0;
-        Scanner scanner = new Scanner(file);
-        Map<E, Object> map = criteria.getCriteria();
-        while (scanner.hasNextLine()) {
-            String fileLine = scanner.nextLine();
-            fileLine = fileLine.replace(";", ",");
-            String parameter;
-            for (Map.Entry entry : map.entrySet()) {
-                parameter = " " + entry.getKey() + "=" + entry.getValue() + ",";
-                if (fileLine.contains(parameter)) {
-                    count++;
-                }
-            }
-            if (fileLine.contains("VacuumCleaner") && map.size() == count) {
-                appliance = makeVacuumCleaner(fileLine);
-                return appliance;
-            }
-            count = 0;
-        }
-        return null;
-    }
+
 }
