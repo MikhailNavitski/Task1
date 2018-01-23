@@ -50,6 +50,7 @@ public class Main {
             appliance = service.find(criteriaOven);
 
             PrintApplianceInfo.print(appliance);
+
             ///////////////////////////////////////////////////////////////////
             Criteria<Speakers> criteriaSpeakers = new Criteria<Speakers>();
             criteriaSpeakers.setApplianceType("Speakers");
@@ -58,8 +59,18 @@ public class Main {
 
             appliance = service.find(criteriaSpeakers);
 
+            PrintApplianceInfo.print(appliance);
+
+            /////////////////////////////////////////////////////////////////////
+            Criteria<Laptop> criteriaLaptop = new Criteria<Laptop>();
+            criteriaLaptop.setApplianceType("Laptop");
+            criteriaLaptop.add(Laptop.CPU,1.2);
+
+            appliance = service.find(criteriaLaptop);
 
             PrintApplianceInfo.print(appliance);
+
+
         } catch (FileReaderException e) {
             System.out.println(e.getMessage());
         }

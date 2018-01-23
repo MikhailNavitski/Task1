@@ -17,30 +17,47 @@ public class ApplianceDAOImpl implements ApplianceDAO {
     @Override
     public <E> Appliance find(Criteria<E> criteria) throws IOException {
 
-        Appliance appliance;
+        Appliance appliance = null;
+        Map<E, Object> mapOfCriteria = criteria.getCriteria();
+        int countOfMatches = 0;
         File file = new File("jwd-task01-template//src//main//resources//appliances_db.txt");
-        int count = 0;
-        String type = criteria.getApplianceType();
         Scanner scanner = new Scanner(file);
-        Map<E, Object> map = criteria.getCriteria();
         while (scanner.hasNextLine()) {
             String fileLine = scanner.nextLine();
-            fileLine = fileLine.replace(";", ",");
-            String parameter;
-            for (Map.Entry entry : map.entrySet()) {
-                parameter = " " + entry.getKey() + "=" + entry.getValue() + ",";
-                if (fileLine.contains(parameter)) {
-                    count++;
+            for (Map.Entry entry : mapOfCriteria.entrySet()) {
+                boolean result = match(fileLine, entry.getKey(), entry.getValue());
+                if (result) {
+                    countOfMatches++;
                 }
             }
-            if (map.size() == count ) {
+            if (mapOfCriteria.size() == countOfMatches) {
+                String type = criteria.getApplianceType();
                 ApplianceDirector director = new ApplianceDirector();
                 Command command = director.getCommand(type);
-                appliance = command.makeAppliance(fileLine);
-                return appliance;
+                appliance = command.makeAppliance(getValue(fileLine));
+                break;
             }
-            count = 0;
+            countOfMatches = 0;
         }
-        return null;
+        return appliance;
+    }
+
+    private static boolean match(String fileLine, Object keyParametr, Object valueParametr) {
+        fileLine = fileLine.replace(";", ",");
+        String parameter;
+        parameter = " " + keyParametr + "=" + valueParametr + ",";
+        if (fileLine.contains(parameter)) {
+            return true;
+        }
+        return false;
+    }
+
+    private static String[] getValue(String fileLine) {
+        fileLine = fileLine.replace(";", ",");
+        String[] value = fileLine.split(" ");
+        for (int i = 2; i < value.length; i++) {
+            value[i] = value[i].substring(value[i].indexOf("=") + 1, value[i].indexOf(","));
+        }
+        return value;
     }
 }
