@@ -79,7 +79,12 @@ public class Laptop extends Appliance {
         if (memoryRom != laptop.memoryRom) return false;
         if (systemMemory != laptop.systemMemory) return false;
         if (Double.compare(laptop.cpu, cpu) != 0) return false;
-        if (displayInchs == laptop.displayInchs) if (os != null ? os.equals(laptop.os) : laptop.os == null) return true;
+        if (displayInchs == laptop.displayInchs) {
+            if (!(os != null ? os.equals(laptop.os) : laptop.os == null)) {
+                return false;
+            }
+            return true;
+        }
         return false;
     }
 

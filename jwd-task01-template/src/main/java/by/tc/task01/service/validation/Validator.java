@@ -17,7 +17,7 @@ public class Validator {
             String value = getValue(entry.getKey(), entry.getValue());
             String type = criteria.getApplianceType();
             CommandValidation command = director.getCommand(type);
-            firstMachCount = command.execute(value, parameter,firstMachCount);
+            firstMachCount = command.execute(value, parameter, firstMachCount);
         }
         return mapCriteria.size() == firstMachCount;
     }

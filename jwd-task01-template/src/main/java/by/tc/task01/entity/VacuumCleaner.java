@@ -4,17 +4,14 @@ public class VacuumCleaner extends Appliance {
     private int powerConsumption;
     private String bagType;
     private String wandType;
-    private int MotorSpeedRegulation;
+    private int motorSpeedRegulation;
     private String filterType;
-    private int CleaningWidth;
+    private int cleaningWidth;
 
     public int getCleaningWidth() {
-        return CleaningWidth;
+        return cleaningWidth;
     }
 
-    public void setCleaningWidth(int cleaningWidth) {
-        CleaningWidth = cleaningWidth;
-    }
 
     public int getpowerConsumption() {
         return powerConsumption;
@@ -29,11 +26,15 @@ public class VacuumCleaner extends Appliance {
     }
 
     public int getMotorSpeedRegulation() {
-        return MotorSpeedRegulation;
+        return motorSpeedRegulation;
     }
 
     public String getfilterType() {
         return filterType;
+    }
+
+    public void setCleaningWidth(int cleaningWidth) {
+        this.cleaningWidth = cleaningWidth;
     }
 
     public void setPowerConsumption(int powerConsumption) {
@@ -48,8 +49,8 @@ public class VacuumCleaner extends Appliance {
         this.wandType = wandType;
     }
 
-    public void setMotorSpeedRegulation(int MotorSpeedRegulation) {
-        this.MotorSpeedRegulation = MotorSpeedRegulation;
+    public void setMotorSpeedRegulation(int motorSpeedRegulation) {
+        this.motorSpeedRegulation = motorSpeedRegulation;
     }
 
     public void setFilterType(String filterType) {
@@ -62,9 +63,9 @@ public class VacuumCleaner extends Appliance {
                 "powerConsumption=" + powerConsumption +
                 ", bagType='" + bagType + '\'' +
                 ", wandType='" + wandType + '\'' +
-                ", MotorSpeedRegulation=" + MotorSpeedRegulation +
+                ", MotorSpeedRegulation=" + motorSpeedRegulation +
                 ", filterType='" + filterType + '\'' +
-                ", CleaningWidth=" + CleaningWidth
+                ", CleaningWidth=" + cleaningWidth
                 ;
     }
 
@@ -76,8 +77,8 @@ public class VacuumCleaner extends Appliance {
         VacuumCleaner that = (VacuumCleaner) o;
 
         if (powerConsumption != that.powerConsumption) return false;
-        if (MotorSpeedRegulation != that.MotorSpeedRegulation) return false;
-        if (CleaningWidth != that.CleaningWidth) return false;
+        if (motorSpeedRegulation != that.motorSpeedRegulation) return false;
+        if (cleaningWidth != that.cleaningWidth) return false;
         if (bagType != null ? !bagType.equals(that.bagType) : that.bagType != null) return false;
         if (wandType != null ? !wandType.equals(that.wandType) : that.wandType != null) return false;
         return filterType != null ? filterType.equals(that.filterType) : that.filterType == null;
@@ -88,9 +89,9 @@ public class VacuumCleaner extends Appliance {
         int result = powerConsumption;
         result = 31 * result + (bagType != null ? bagType.hashCode() : 0);
         result = 31 * result + (wandType != null ? wandType.hashCode() : 0);
-        result = 31 * result + MotorSpeedRegulation;
+        result = 31 * result + motorSpeedRegulation;
         result = 31 * result + (filterType != null ? filterType.hashCode() : 0);
-        result = 31 * result + CleaningWidth;
+        result = 31 * result + cleaningWidth;
         return result;
     }
 }

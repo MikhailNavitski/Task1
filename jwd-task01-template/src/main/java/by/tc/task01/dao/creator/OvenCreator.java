@@ -7,7 +7,7 @@ import by.tc.task01.entity.Oven;
 
 public class OvenCreator implements Command {
 
-    public Appliance makeAppliance(String [] value) {
+    public Appliance makeAppliance(String[] value) {
         Oven oven = new Oven();
         oven.setPowerConsumption(Integer.parseInt(value[2]));
         oven.setWeight(Integer.parseInt(value[3]));

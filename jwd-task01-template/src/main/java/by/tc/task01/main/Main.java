@@ -64,7 +64,8 @@ public class Main {
             /////////////////////////////////////////////////////////////////////
             Criteria<Laptop> criteriaLaptop = new Criteria<Laptop>();
             criteriaLaptop.setApplianceType("Laptop");
-            criteriaLaptop.add(Laptop.CPU,1.2);
+            criteriaLaptop.add(Laptop.CPU, 1.2);
+            criteriaLaptop.add(Laptop.BATTERY_CAPACITY, 1);
 
             appliance = service.find(criteriaLaptop);
 

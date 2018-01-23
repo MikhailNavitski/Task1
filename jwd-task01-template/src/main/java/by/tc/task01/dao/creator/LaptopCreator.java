@@ -7,7 +7,7 @@ import by.tc.task01.entity.Laptop;
 
 public class LaptopCreator implements Command {
 
-    public Appliance makeAppliance(String [] value) {
+    public Appliance makeAppliance(String[] value) {
         Laptop laptop = new Laptop();
         laptop.setBatteryCapacity(Double.parseDouble(value[2]));
         laptop.setOs(value[3]);

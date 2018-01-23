@@ -7,7 +7,7 @@ import by.tc.task01.entity.VacuumCleaner;
 public class VacuumCleanerCreator implements Command {
 
 
-    public Appliance makeAppliance(String [] value) {
+    public Appliance makeAppliance(String[] value) {
         VacuumCleaner vacuumCleaner = new VacuumCleaner();
         vacuumCleaner.setPowerConsumption(Integer.parseInt(value[2]));
         vacuumCleaner.setFilterType(value[3]);

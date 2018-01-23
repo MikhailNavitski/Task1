@@ -6,15 +6,15 @@ import java.util.regex.Pattern;
 
 public class ValidatorTSVImpl implements CommandValidation {
 
-    private final static String REGEX_NUM = "\\d+?(.\\d+)?";
-    private final static String REGEX_STR = "[a-zA-Z]+";
-    private final static String REGEX_FILTER = "[ABC]";
-    private final static String REGEX_F = "\\d+-\\d+.?(\\d+)?";
-    private final static String REGEX_WAND_TYPE = "[a-z]+-[a-z]+-[a-z]+";
-    private final static String REGEX_BAG_TYPE = "[A-Z]+?(\\d+)?(-\\d+)?";
+    private static final String REGEX_NUM = "\\d+?(.\\d+)?";
+    private static final String REGEX_STR = "[a-zA-Z]+";
+    private static final String REGEX_FILTER = "[ABC]";
+    private static final String REGEX_F = "\\d+-\\d+.?(\\d+)?";
+    private static final String REGEX_WAND_TYPE = "[a-z]+-[a-z]+-[a-z]+";
+    private static final String REGEX_BAG_TYPE = "[A-Z]+?(\\d+)?(-\\d+)?";
 
     @Override
-    public int execute(String value, String parameter,int firstMachCount) {
+    public int execute(String value, String parameter, int firstMachCount) {
         if (parameter.contains("COLOR") || parameter.contains("OS") && value != null && Pattern.compile(REGEX_STR).matcher(value).matches()) {
             firstMachCount++;
         }

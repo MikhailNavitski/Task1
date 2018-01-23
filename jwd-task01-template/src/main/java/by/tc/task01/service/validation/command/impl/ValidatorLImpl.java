@@ -6,8 +6,8 @@ import java.util.regex.Pattern;
 
 public class ValidatorLImpl implements CommandValidation {
 
-    private final static String REGEX_NUM = "\\d+?(.\\d+)?";
-    private final static String REGEX_STR = "[a-zA-Z]+";
+    private static final String REGEX_NUM = "\\d+?(.\\d+)?";
+    private static final String REGEX_STR = "[a-zA-Z]+";
 
     @Override
     public int execute(String value, String parameter, int firstMachCount) {

@@ -8,7 +8,7 @@ import by.tc.task01.entity.TabletPC;
 public class TabletPCCreator implements Command {
 
 
-    public Appliance makeAppliance(String [] value) {
+    public Appliance makeAppliance(String[] value) {
         TabletPC tabletPC = new TabletPC();
         tabletPC.setBatteryCapacity(Integer.parseInt(value[2]));
         tabletPC.setDisplayInches(Integer.parseInt(value[3]));

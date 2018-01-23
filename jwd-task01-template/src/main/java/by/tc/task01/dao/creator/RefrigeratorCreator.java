@@ -7,7 +7,7 @@ import by.tc.task01.entity.Refrigerator;
 
 public class RefrigeratorCreator implements Command {
 
-    public Appliance makeAppliance(String [] value) {
+    public Appliance makeAppliance(String[] value) {
         Refrigerator refrigerator = new Refrigerator();
         refrigerator.setPowerConsumption(Integer.parseInt(value[2]));
         refrigerator.setWeight(Integer.parseInt(value[3]));

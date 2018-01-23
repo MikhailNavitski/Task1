@@ -20,7 +20,8 @@ public class ValidationDirector {
     }
 
     public CommandValidation getCommand(String type) {
-        CommandValidation commandValidation = map.get(type);
+        CommandValidation commandValidation;
+        commandValidation = map.get(type);
         return commandValidation;
     }
 }

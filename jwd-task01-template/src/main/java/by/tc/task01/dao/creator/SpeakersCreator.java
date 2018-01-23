@@ -4,10 +4,9 @@ import by.tc.task01.dao.command.Command;
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.Speakers;
 
-
 public class SpeakersCreator implements Command {
 
-    public Appliance makeAppliance(String [] value) {
+    public Appliance makeAppliance(String[] value) {
         Speakers speakers = new Speakers();
         speakers.setPowerConsumption(Integer.parseInt(value[2]));
         speakers.setNumberOfSpeakers(Integer.parseInt(value[3]));
