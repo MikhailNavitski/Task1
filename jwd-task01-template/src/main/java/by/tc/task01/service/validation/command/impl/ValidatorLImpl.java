@@ -10,18 +10,14 @@ public class ValidatorLImpl implements CommandValidation {
     private final static String REGEX_STR = "[a-zA-Z]+";
 
     @Override
-    public int execute(String[] fileLine, int secondCount, String parameter) {
-        String value = null;
-        for (String aLine : fileLine) {
-            value = aLine.substring(aLine.indexOf("=") + 1, aLine.indexOf(","));
-        }
+    public int execute(String value, String parameter, int firstMachCount) {
         if (parameter.contains("OS") && value != null && Pattern.compile(REGEX_STR).matcher(value).matches()) {
-            secondCount++;
+            firstMachCount++;
         } else {
             if (value != null && Pattern.compile(REGEX_NUM).matcher(value).matches()) {
-                secondCount++;
+                firstMachCount++;
             }
         }
-        return secondCount;
+        return firstMachCount;
     }
 }

@@ -14,31 +14,27 @@ public class ValidatorTSVImpl implements CommandValidation {
     private final static String REGEX_BAG_TYPE = "[A-Z]+?(\\d+)?(-\\d+)?";
 
     @Override
-    public int execute(String[] fileLine, int secondCount, String parameter) {
-        String value = null;
-        for (String aLine : fileLine) {
-            value = aLine.substring(aLine.indexOf("=") + 1, aLine.indexOf(","));
-        }
+    public int execute(String value, String parameter,int firstMachCount) {
         if (parameter.contains("COLOR") || parameter.contains("OS") && value != null && Pattern.compile(REGEX_STR).matcher(value).matches()) {
-            secondCount++;
+            firstMachCount++;
         }
         if (parameter.contains("FILTER_TYPE") && value != null && Pattern.compile(REGEX_FILTER).matcher(value).matches()) {
-            secondCount++;
+            firstMachCount++;
         }
         if (parameter.contains("WAND_TYPE") && value != null && Pattern.compile(REGEX_WAND_TYPE).matcher(value).matches()) {
-            secondCount++;
+            firstMachCount++;
         }
         if (parameter.contains("BAG_TYPE") && value != null && Pattern.compile(REGEX_BAG_TYPE).matcher(value).matches()) {
-            secondCount++;
+            firstMachCount++;
         }
         if (parameter.contains("FREQUENCY_RANGE") && value != null && Pattern.compile(REGEX_F).matcher(value).matches()) {
-            secondCount++;
+            firstMachCount++;
         } else {
             if (value != null && Pattern.compile(REGEX_NUM).matcher(value).matches()) {
-                secondCount++;
+                firstMachCount++;
             }
         }
-        return secondCount;
+        return firstMachCount;
     }
 }
 

@@ -6,10 +6,11 @@ import by.tc.task01.dao.command.Command;
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.criteria.Criteria;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Map;
-import java.util.Scanner;
 
 
 public class ApplianceDAOImpl implements ApplianceDAO {
@@ -21,9 +22,9 @@ public class ApplianceDAOImpl implements ApplianceDAO {
         Map<E, Object> mapOfCriteria = criteria.getCriteria();
         int countOfMatches = 0;
         File file = new File("jwd-task01-template//src//main//resources//appliances_db.txt");
-        Scanner scanner = new Scanner(file);
-        while (scanner.hasNextLine()) {
-            String fileLine = scanner.nextLine();
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+        String fileLine;
+        while ((fileLine = bufferedReader.readLine()) != null) {
             for (Map.Entry entry : mapOfCriteria.entrySet()) {
                 boolean result = match(fileLine, entry.getKey(), entry.getValue());
                 if (result) {
@@ -42,10 +43,10 @@ public class ApplianceDAOImpl implements ApplianceDAO {
         return appliance;
     }
 
-    private static boolean match(String fileLine, Object keyParametr, Object valueParametr) {
+    private static boolean match(String fileLine, Object keyParameter, Object valueParameter) {
         fileLine = fileLine.replace(";", ",");
         String parameter;
-        parameter = " " + keyParametr + "=" + valueParametr + ",";
+        parameter = " " + keyParameter + "=" + valueParameter + ",";
         if (fileLine.contains(parameter)) {
             return true;
         }

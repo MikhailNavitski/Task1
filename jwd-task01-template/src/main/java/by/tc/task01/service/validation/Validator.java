@@ -9,24 +9,33 @@ import java.util.Map;
 public class Validator {
 
     public static <E> boolean criteriaValidator(Criteria<E> criteria) {
-
-        String parameter;
-        int firstCount = 0;
-        int secondCount = 0;
-        String type = criteria.getApplianceType();
-        Map<E, Object> map = criteria.getCriteria();
-
+        Map<E, Object> mapCriteria = criteria.getCriteria();
         ValidationDirector director = new ValidationDirector();
-        for (Map.Entry entry : map.entrySet()) {
-            parameter = entry.getKey() + "=" + entry.getValue() + ",";
-            firstCount++;
-            String[] fileLine = parameter.split(" ");
-
-
+        int firstMachCount = 0;
+        for (Map.Entry entry : mapCriteria.entrySet()) {
+            String parameter = getParameter(entry.getKey(), entry.getValue());
+            String value = getValue(entry.getKey(), entry.getValue());
+            String type = criteria.getApplianceType();
             CommandValidation command = director.getCommand(type);
-            secondCount = command.execute(fileLine, secondCount, parameter);
+            firstMachCount = command.execute(value, parameter,firstMachCount);
         }
-        return map.size() == firstCount && map.size() == secondCount;
+        return mapCriteria.size() == firstMachCount;
+    }
+
+    private static String getValue(Object keyParameter, Object valueParameter) {
+        String parameter;
+        parameter = keyParameter + "=" + valueParameter + ",";
+        String value = null;
+        for (int i = 0; i < parameter.length(); i++) {
+            value = parameter.substring(parameter.indexOf("=") + 1, parameter.indexOf(","));
+        }
+        return value;
+    }
+
+    private static String getParameter(Object keyParameter, Object valueParameter) {
+        String parameter;
+        parameter = keyParameter + "=" + valueParameter + ",";
+        return parameter;
     }
 }
 
