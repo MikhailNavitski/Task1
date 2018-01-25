@@ -4,6 +4,7 @@ import by.tc.task01.dao.ApplianceDAO;
 import by.tc.task01.dao.ApplianceFileReader;
 import by.tc.task01.dao.FileReaderFactory;
 import by.tc.task01.dao.command.ApplianceDirector;
+import by.tc.task01.dao.command.ApplianceDirectorFactory;
 import by.tc.task01.dao.command.Command;
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.criteria.Criteria;
@@ -18,7 +19,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
     @Override
     public <E> Appliance find(Criteria<E> criteria) throws IOException {
         Appliance appliance = null;
-        Map<E, Object> mapOfCriteria = criteria.getCriteria();
 
         FileReaderFactory factory = FileReaderFactory.getInstance();
         ApplianceFileReader applianceFileReader = factory.getFileReader();
@@ -26,6 +26,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
         try (BufferedReader br = new BufferedReader(new FileReader(applianceFileReader.readingFile()))) {
             String fileLine;
             int countOfMatches = 0;
+            Map<E, Object> mapOfCriteria = criteria.getCriteria();
             while ((fileLine = br.readLine()) != null) {
                 for (Map.Entry entry : mapOfCriteria.entrySet()) {
                     boolean result = match(fileLine, entry.getKey(), entry.getValue());
@@ -34,16 +35,24 @@ public class ApplianceDAOImpl implements ApplianceDAO {
                     }
                 }
                 if (mapOfCriteria.size() == countOfMatches) {
-                    String type = criteria.getApplianceType();
-                    ApplianceDirector director = new ApplianceDirector();
-                    Command command = director.getCommand(type);
-                    appliance = command.makeAppliance(getValue(fileLine));
+                    appliance = createCommand(criteria,fileLine);
                     break;
                 }
                 countOfMatches = 0;
             }
             return appliance;
         }
+    }
+
+    private static <E> Appliance createCommand(Criteria<E> criteria,String fileLine) {
+        Appliance appliance;
+        ApplianceDirectorFactory directorFactory = ApplianceDirectorFactory.getInstance();
+        ApplianceDirector director = directorFactory.getApplianceDirector();
+
+        String type = criteria.getApplianceType();
+        Command command = director.getCommand(type);
+        appliance = command.makeAppliance(getValue(fileLine));
+        return appliance;
     }
 
     private static boolean match(String fileLine, Object keyParameter, Object valueParameter) {
@@ -61,4 +70,5 @@ public class ApplianceDAOImpl implements ApplianceDAO {
         }
         return value;
     }
+
 }

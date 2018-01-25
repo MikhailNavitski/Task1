@@ -5,7 +5,7 @@ import by.tc.task01.entity.Appliance;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CommandDirector {
+public class CommandDirector{
     private Map<Object, Command> map = new HashMap<>();
 
     public CommandDirector(Appliance appliance) {
