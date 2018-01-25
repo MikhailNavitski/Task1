@@ -5,6 +5,4 @@ public abstract class Appliance {
     public String toString() {
         return "Appliance{}";
     }
-
-
 }

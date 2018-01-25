@@ -12,7 +12,7 @@ public class RefrigeratorCreator implements Command {
         refrigerator.setPowerConsumption(Integer.parseInt(value[2]));
         refrigerator.setWeight(Integer.parseInt(value[3]));
         refrigerator.setFreezerCapacity(Integer.parseInt(value[4]));
-        refrigerator.setoverallCapacity(Double.parseDouble(value[5]));
+        refrigerator.setOverallCapacity(Double.parseDouble(value[5]));
         refrigerator.setHeight(Integer.parseInt(value[6]));
         refrigerator.setWidth(Integer.parseInt(value[7]));
         return refrigerator;

@@ -58,14 +58,14 @@ public class Oven extends Appliance {
 
     @Override
     public String toString() {
-        return "\n\t\t\tOven\t\t\t \n" +
+        return "Oven{" +
                 "powerConsumption=" + powerConsumption +
                 ", weight=" + weight +
                 ", capacity=" + capacity +
                 ", depth=" + depth +
                 ", height=" + height +
-                ", width=" + width
-                ;
+                ", width=" + width +
+                '}';
     }
 
     @Override

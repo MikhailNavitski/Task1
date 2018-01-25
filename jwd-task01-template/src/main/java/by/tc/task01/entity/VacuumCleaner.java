@@ -13,15 +13,15 @@ public class VacuumCleaner extends Appliance {
     }
 
 
-    public int getpowerConsumption() {
+    public int getPowerConsumption() {
         return powerConsumption;
     }
 
-    public String getbagType() {
+    public String getBagType() {
         return bagType;
     }
 
-    public String getwandType() {
+    public String getWandType() {
         return wandType;
     }
 
@@ -29,7 +29,7 @@ public class VacuumCleaner extends Appliance {
         return motorSpeedRegulation;
     }
 
-    public String getfilterType() {
+    public String getFilterType() {
         return filterType;
     }
 
@@ -59,14 +59,14 @@ public class VacuumCleaner extends Appliance {
 
     @Override
     public String toString() {
-        return "\n\t\t\tVacuumCleaner\t\t\t\n" +
+        return "VacuumCleaner{" +
                 "powerConsumption=" + powerConsumption +
                 ", bagType='" + bagType + '\'' +
                 ", wandType='" + wandType + '\'' +
-                ", MotorSpeedRegulation=" + motorSpeedRegulation +
+                ", motorSpeedRegulation=" + motorSpeedRegulation +
                 ", filterType='" + filterType + '\'' +
-                ", CleaningWidth=" + cleaningWidth
-                ;
+                ", cleaningWidth=" + cleaningWidth +
+                '}';
     }
 
     @Override

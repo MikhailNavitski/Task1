@@ -49,13 +49,13 @@ public class TabletPC extends Appliance {
 
     @Override
     public String toString() {
-        return "\t\t\t\nTabletPC\t\t\t\n" +
+        return "TabletPC{" +
                 "batteryCapacity=" + batteryCapacity +
                 ", displayInches=" + displayInches +
                 ", memoryRom=" + memoryRom +
                 ", flashMemoryCapacity=" + flashMemoryCapacity +
-                ", color='" + color + '\''
-                ;
+                ", color='" + color + '\'' +
+                '}';
     }
 
     @Override

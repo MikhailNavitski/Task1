@@ -18,7 +18,7 @@ public class Speakers extends Appliance {
         return frequencyRange;
     }
 
-    public int getCordLENGTH() {
+    public int getCordLength() {
         return cordLength;
     }
 
@@ -34,18 +34,18 @@ public class Speakers extends Appliance {
         this.frequencyRange = frequencyRange;
     }
 
-    public void setCordLENGTH(int cordLENGTH) {
+    public void setCordLength(int cordLENGTH) {
         this.cordLength = cordLENGTH;
     }
 
     @Override
     public String toString() {
-        return "\n\t\t\tSpeakers\t\t\t\n" +
+        return "Speakers{" +
                 "powerConsumption=" + powerConsumption +
                 ", numberOfSpeakers=" + numberOfSpeakers +
                 ", frequencyRange='" + frequencyRange + '\'' +
-                ", cordLength=" + cordLength
-                ;
+                ", cordLength=" + cordLength +
+                '}';
     }
 
     @Override

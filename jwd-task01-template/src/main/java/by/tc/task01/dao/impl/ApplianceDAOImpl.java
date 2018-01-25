@@ -19,14 +19,13 @@ public class ApplianceDAOImpl implements ApplianceDAO {
     public <E> Appliance find(Criteria<E> criteria) throws IOException {
         Appliance appliance = null;
         Map<E, Object> mapOfCriteria = criteria.getCriteria();
-        int countOfMatches = 0;
 
         FileReaderFactory factory = FileReaderFactory.getInstance();
         ApplianceFileReader applianceFileReader = factory.getFileReader();
 
-        String fileLine;
-
         try (BufferedReader br = new BufferedReader(new FileReader(applianceFileReader.readingFile()))) {
+            String fileLine;
+            int countOfMatches = 0;
             while ((fileLine = br.readLine()) != null) {
                 for (Map.Entry entry : mapOfCriteria.entrySet()) {
                     boolean result = match(fileLine, entry.getKey(), entry.getValue());
@@ -43,8 +42,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
                 }
                 countOfMatches = 0;
             }
-
-
             return appliance;
         }
     }

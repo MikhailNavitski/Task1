@@ -11,7 +11,7 @@ public class SpeakersCreator implements Command {
         speakers.setPowerConsumption(Integer.parseInt(value[2]));
         speakers.setNumberOfSpeakers(Integer.parseInt(value[3]));
         speakers.setFrequencyRange(value[4]);
-        speakers.setCordLENGTH(Integer.parseInt(value[5]));
+        speakers.setCordLength(Integer.parseInt(value[5]));
         return speakers;
     }
 

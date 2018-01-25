@@ -20,7 +20,7 @@ public class Refrigerator extends Appliance {
         this.freezerCapacity = freezerCapacity;
     }
 
-    public void setoverallCapacity(double overallCapacity) {
+    public void setOverallCapacity(double overallCapacity) {
         this.overallCapacity = overallCapacity;
     }
 
@@ -44,7 +44,7 @@ public class Refrigerator extends Appliance {
         return freezerCapacity;
     }
 
-    public double getoverallCapacity() {
+    public double getOverallCapacity() {
         return overallCapacity;
     }
 
@@ -58,14 +58,14 @@ public class Refrigerator extends Appliance {
 
     @Override
     public String toString() {
-        return "\n\t\t\tRefrigerator\t\t\t\n" +
+        return "Refrigerator{" +
                 "powerConsumption=" + powerConsumption +
                 ", weight=" + weight +
                 ", freezerCapacity=" + freezerCapacity +
                 ", overallCapacity=" + overallCapacity +
                 ", height=" + height +
-                ", width=" + width
-                ;
+                ", width=" + width +
+                '}';
     }
 
     @Override

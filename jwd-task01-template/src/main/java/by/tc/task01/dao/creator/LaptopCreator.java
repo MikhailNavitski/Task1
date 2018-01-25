@@ -9,14 +9,12 @@ public class LaptopCreator implements Command {
 
     public Appliance makeAppliance(String[] value) {
         Laptop laptop = new Laptop();
-        laptop.setBatteryCapacity(Double.parseDouble(value[2]));
+        laptop.setBatteryCapacity(Integer.parseInt(value[2]));
         laptop.setOs(value[3]);
         laptop.setMemoryRom(Integer.parseInt(value[4]));
         laptop.setSystemMemory(Integer.parseInt(value[5]));
         laptop.setCpu(Double.parseDouble(value[6]));
-        laptop.setDisplayInchs(Integer.parseInt(value[7]));
+        laptop.setDisplayInches(Integer.parseInt(value[7]));
         return laptop;
     }
-
-
 }

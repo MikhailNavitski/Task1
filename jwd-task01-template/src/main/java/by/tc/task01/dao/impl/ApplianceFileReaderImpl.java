@@ -8,7 +8,8 @@ import java.util.ResourceBundle;
 public class ApplianceFileReaderImpl implements ApplianceFileReader {
     public File readingFile() {
         String filePath = ResourceBundle.getBundle("source_name").getString("source.name");
-        File file = new File(filePath);
+        File file;
+        file = new File(filePath);
         return file;
     }
 }
