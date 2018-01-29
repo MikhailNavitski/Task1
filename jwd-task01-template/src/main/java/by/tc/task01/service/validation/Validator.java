@@ -13,11 +13,9 @@ public class Validator {
         ValidationDirector director = new ValidationDirector();
         int firstMachCount = 0;
         for (Map.Entry entry : mapCriteria.entrySet()) {
-            String parameter = getParameter(entry.getKey(), entry.getValue());
             String value = getValue(entry.getKey(), entry.getValue());
-            String type = criteria.getApplianceType();
-            CommandValidation command = director.getCommand(type);
-            firstMachCount = command.execute(value, parameter, firstMachCount);
+            CommandValidation command = director.getCommand(entry.getKey().toString());
+            firstMachCount = command.execute(value, firstMachCount);
         }
         return mapCriteria.size() == firstMachCount;
     }
@@ -30,12 +28,6 @@ public class Validator {
             value = parameter.substring(parameter.indexOf("=") + 1, parameter.indexOf(","));
         }
         return value;
-    }
-
-    private static String getParameter(Object keyParameter, Object valueParameter) {
-        String parameter;
-        parameter = keyParameter + "=" + valueParameter + ",";
-        return parameter;
     }
 }
 

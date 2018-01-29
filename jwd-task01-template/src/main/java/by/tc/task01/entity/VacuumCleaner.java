@@ -1,6 +1,6 @@
 package by.tc.task01.entity;
 
-public class VacuumCleaner extends Appliance {
+public class VacuumCleaner implements Appliance {
     private int powerConsumption;
     private String bagType;
     private String wandType;

@@ -1,7 +1,8 @@
-package by.tc.task01.main.command;
+package by.tc.task01.main.appliance_information;
 
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.Oven;
+import by.tc.task01.main.command.Command;
 
 public class OvenInfo implements Command {
     private Appliance appliance;

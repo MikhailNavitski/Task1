@@ -7,7 +7,7 @@ import by.tc.task01.main.command.CommandDirector;
 public class PrintApplianceInfo {
     public static void print(Appliance appliance) {
         if (appliance == null) {
-            System.out.println("Данный товар не найден");
+            System.out.println("Данный товар не найден или не пройдена валидация");
         } else {
             CommandDirector director = new CommandDirector(appliance);
             Command command;

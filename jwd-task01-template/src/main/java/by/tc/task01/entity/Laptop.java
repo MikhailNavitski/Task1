@@ -1,6 +1,6 @@
 package by.tc.task01.entity;
 
-public class Laptop extends Appliance {
+public class Laptop implements Appliance {
     private int batteryCapacity;
     private String os;
     private int memoryRom;

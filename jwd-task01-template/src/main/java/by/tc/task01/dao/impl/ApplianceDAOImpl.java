@@ -3,9 +3,7 @@ package by.tc.task01.dao.impl;
 import by.tc.task01.dao.ApplianceDAO;
 import by.tc.task01.dao.ApplianceFileReader;
 import by.tc.task01.dao.FileReaderFactory;
-import by.tc.task01.dao.command.ApplianceDirector;
-import by.tc.task01.dao.command.ApplianceDirectorFactory;
-import by.tc.task01.dao.command.Command;
+import by.tc.task01.dao.command.CommandCreator;
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.criteria.Criteria;
 
@@ -35,7 +33,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
                     }
                 }
                 if (mapOfCriteria.size() == countOfMatches) {
-                    appliance = createCommand(criteria,fileLine);
+                    appliance = CommandCreator.createCommand(criteria,fileLine);
                     break;
                 }
                 countOfMatches = 0;
@@ -44,16 +42,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
         }
     }
 
-    private static <E> Appliance createCommand(Criteria<E> criteria,String fileLine) {
-        Appliance appliance;
-        ApplianceDirectorFactory directorFactory = ApplianceDirectorFactory.getInstance();
-        ApplianceDirector director = directorFactory.getApplianceDirector();
 
-        String type = criteria.getApplianceType();
-        Command command = director.getCommand(type);
-        appliance = command.makeAppliance(getValue(fileLine));
-        return appliance;
-    }
 
     private static boolean match(String fileLine, Object keyParameter, Object valueParameter) {
         fileLine = fileLine.replace(";", ",");
@@ -62,13 +51,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
         return fileLine.contains(parameter);
     }
 
-    private static String[] getValue(String fileLine) {
-        fileLine = fileLine.replace(";", ",");
-        String[] value = fileLine.split(" ");
-        for (int i = 2; i < value.length; i++) {
-            value[i] = value[i].substring(value[i].indexOf('=') + 1, value[i].indexOf(','));
-        }
-        return value;
-    }
+
 
 }

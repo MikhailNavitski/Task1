@@ -1,6 +1,7 @@
 package by.tc.task01.main.command;
 
 import by.tc.task01.entity.Appliance;
+import by.tc.task01.main.appliance_information.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +14,7 @@ public class CommandDirector{
         map.put("class by.tc.task01.entity.Oven", new OvenInfo(appliance));
         map.put("class by.tc.task01.entity.Refrigerator", new RefrigeratorInfo(appliance));
         map.put("class by.tc.task01.entity.Speakers", new SpeakersInfo(appliance));
-        map.put("class by.tc.task01.entity.TablePC", new TabletPCInfo(appliance));
+        map.put("class by.tc.task01.entity.TabletPC", new TabletPCInfo(appliance));
         map.put("class by.tc.task01.entity.VacuumCleaner", new VacuumCleanerInfo(appliance));
     }
 

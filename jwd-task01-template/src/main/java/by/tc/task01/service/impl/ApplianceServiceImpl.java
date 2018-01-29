@@ -16,7 +16,6 @@ public class ApplianceServiceImpl implements ApplianceService {
     public <E> Appliance find(Criteria<E> criteria) throws FileReaderException {
         try {
             if (!Validator.criteriaValidator(criteria)) {
-                System.out.println("\nВалидация не пройдена\n");
                 return null;
             }
             DAOFactory factory = DAOFactory.getInstance();

@@ -47,7 +47,7 @@ public class Main {
             criteriaTabletPC.add(TabletPC.DISPLAY_INCHES, 14);
             criteriaTabletPC.add(TabletPC.MEMORY_ROM, 4);
 
-            appliance = service.find(criteriaOven);
+            appliance = service.find(criteriaTabletPC);
 
             PrintApplianceInfo.print(appliance);
 
@@ -68,6 +68,15 @@ public class Main {
             criteriaLaptop.add(Laptop.BATTERY_CAPACITY, 1);
 
             appliance = service.find(criteriaLaptop);
+
+            PrintApplianceInfo.print(appliance);
+
+
+            Criteria<VacuumCleaner> criteriaVacuumCleaner = new Criteria<VacuumCleaner>();
+            criteriaVacuumCleaner.setApplianceType("VacuumCleaner");
+            criteriaVacuumCleaner.add(VacuumCleaner.BAG_TYPE,"A2");
+
+            appliance = service.find(criteriaVacuumCleaner);
 
             PrintApplianceInfo.print(appliance);
 

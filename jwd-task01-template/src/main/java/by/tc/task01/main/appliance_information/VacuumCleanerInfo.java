@@ -1,8 +1,9 @@
-package by.tc.task01.main.command;
+package by.tc.task01.main.appliance_information;
 
 
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.VacuumCleaner;
+import by.tc.task01.main.command.Command;
 
 public class VacuumCleanerInfo implements Command {
     private Appliance appliance;
