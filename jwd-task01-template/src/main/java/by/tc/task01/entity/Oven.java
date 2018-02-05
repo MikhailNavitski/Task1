@@ -7,7 +7,8 @@ public class Oven implements Appliance {
     private int depth;
     private double height;
     private double width;
-
+// в классе конструкторы желательно прописывать явно
+    
     public void setPowerConsumption(int powerConsumption) {
         this.powerConsumption = powerConsumption;
     }
